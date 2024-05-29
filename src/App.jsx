@@ -1,11 +1,14 @@
-import LoginPage from "./Pages/LoginPage"
+import routes from "./Routes";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+
+const router = createBrowserRouter(routes);
 
 function App() {
   
 
   return (
     <>
-      <LoginPage/>
+      <RouterProvider router={router}/>
     </>
   )
 }
